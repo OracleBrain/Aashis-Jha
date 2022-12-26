@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Aashis | Portfolio</title>
+    <!-- Descrição -->
+    <meta name="description" content="" />
+
+    <!-- Imagens para compartilhamento de links -->
+    <!-- MS Tile - for Microsoft apps-->
+    <meta name="msapplication-TileImage" content="https://photos.app.goo.gl/dA5Cm1LVGL5Eh66K8" />
+    <!-- Facebook e Whatsapp -->
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Aashis | Portfolio" />
+    <meta property="og:title" content="Aashis" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" itemprop="image" content="https://photos.app.goo.gl/dA5Cm1LVGL5Eh66K8" />
+    <meta property="og:image" itemprop="image" content="https://photos.app.goo.gl/dA5Cm1LVGL5Eh66K8" />
+    <meta property="og:image:secure_url" content="https://photos.app.goo.gl/dA5Cm1LVGL5Eh66K8" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/OracleBrain" />
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Aashis" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="https://photos.app.goo.gl/dA5Cm1LVGL5Eh66K8" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Cor customizada para dispositivos móveis -->
+    <meta name="theme-color" content="#1D4956" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <!-- Ícons externos -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/cabecalho.css" />
+    <link rel="stylesheet" href="assets/css/introducao.css" />
+    <link rel="stylesheet" href="assets/css/sobre.css" />
+    <link rel="stylesheet" href="assets/css/habilidades.css" />
+    <link rel="stylesheet" href="assets/css/projetos.css" />
+    <link rel="stylesheet" href="assets/css/citacao.css" />
+    <link rel="stylesheet" href="assets/css/contato.css" />
+    <link rel="stylesheet" href="assets/css/botaoTopo.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/digitando.css" />
+    <link rel="stylesheet" href="assets/css/loading.css" />
+</head>
+
+<body>
+    <div class="container-principal">
+        <header class="cabecalho vidro">
+            <div class="cabecalho-container">
+                <h1 class="cabecalho__logo" data-logo>
+                    <img src="assets/img/PrakashDev.svg" alt="" />
+                </h1>
+                <button class="cabecalho__hamburguer" aria-label="Menu lateral" title="Menu lateral">
+            <i class="ri-menu-line" data-hamburguer></i>
+          </button>
+                <nav class="cabecalho__navegacao">
+                    <ul class="cabecalho__menu" data-menu>
+                        <li class="cabecalho__item">
+                            <a href="#sobre" class="cabecalho__link cabecalho__link--sobre" data-botao="sobre">About</a
+                >
+              </li>
+              <li class="cabecalho__item">
+                <a
+                  href="#habilidades"
+                  class="cabecalho__link cabecalho__link--habilidades"
+                  data-botao="habilidades"
+                  >Skills</a
+                >
+              </li>
+              <li class="cabecalho__item">
+                <a
+                  href="#projetos"
+                  class="cabecalho__link cabecalho__link--projetos"
+                  data-botao="projetos"
+                  >Projects</a
+                >
+              </li>
+              <li class="cabecalho__item">
+                <a
+                  href="#contato"
+                  class="cabecalho__link cabecalho__link--contato"
+                  data-botao="contato"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="botao botao-secundario botao-contato"
+            data-botao="contato"
+          >
+            <span class="texto-gradient texto-contato">Contacts</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="conteudo">
+        <section class="introducao" id="introducao">
+          <div class="introducao__decoracao"></div>
+          <div class="introducao__texto vidro" data-anima="left">
+            <h2 class="introducao__titulo">
+              How far <span class="texto-gradient">Power</span> of the codes can
+              take us?
+            </h2>
+            <p class="introducao__corpo">
+              Our society has become increasingly digital. Don't fall behind, I
+              can help you on this journey!
+            </p>
+            <div class="caixa-botao">
+              <button class="botao botao-primario" data-botao="habilidades">
+                Learn More
+              </button>
+              <button class="botao botao-secundario" data-botao="sobre">
+                <span class="texto-gradient">Who am I?</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <button
+          class="botao-topo"
+          aria-label="Botão voltar ao topo"
+          title="Voltar ao topo da página"
+          data-scrollToTop
+        >
+          <i class="ri-arrow-up-s-line"></i>
+        </button>
+
+        <section class="sobre" id="sobre">
+          <div class="sobre__container vidro">
+            <h2 class="titulo-secao" data-anima="typing">About Me</h2>
+
+            <div class="sobre__apresentacao" data-anima="right">
+              <div class="sobre__hello">
+                <p class="sobre__hello--code">Hello, world! I'm</p>
+                <img
+                  src="assets/img/logoPrakashDev.svg"
+                  alt=""
+                  class="sobre__hello--logo"
+                />
+              </div>
+              <img
+                src="assets/img/avatares/sorridente.png"
+                alt=""
+                class="sobre__apresentacao--avatar"
+              />
+            </div>
+
+            <div class="sobre__ficha" data-anima="left">
+              <img
+                src="assets/img/avatares/meditando.png"
+                alt=""
+                class="sobre__ficha--avatar"
+              />
+              <div class="sobre__ficha--conteudo">
+                <h3 class="subtitulo-secao">Details</h3>
+                <ul class="sobre__card">
+                  <li class="sobre__card--item">
+                    <strong>Name:</strong> Aashis Jha
+                  </li>
+                  <li class="sobre__card--item">
+                    <strong>Birthday:</strong> JULY - 25
+                  </li>
+                  <li class="sobre__card--item">
+                    <strong>Address:</strong> Janakpur - NP
+                  </li>
+                  <li class="sobre__card--item">
+                    <strong>Degree:</strong> Bsc. CSIT
+                  </li>
+                  <li class="sobre__card--item">
+                    <strong>Area of expertise :</strong> Content Creator
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="sobre__quote" data-anima="right">
+              <q class="sobre__quote--texto">
+                I have been seeking to qualify to the maximum,
+                <strong class="texto-gradient"
+                  >always looking for courses, challenges and
+                  experiences</strong
+                >
+                that add to my training, both on the personal and professional
+                side, in order to change the world through the power of codes!
+              </q>
+              <img
+                src="assets/img/avatares/lendo.png"
+                alt=""
+                class="sobre__quote--avatar"
+              />
+            </div>
+
+            <div class="sobre__cinto" data-anima="left">
+              <div class="sobre__cinto--container">
+                <img
+                  src="assets/img/avatares/laptop.png"
+                  alt=""
+                  class="sobre__cinto--imagem"
+                />
+                <div class="sobre__cinto--conteudo">
+                  <h3 class="subtitulo-secao">Utility belt</h3>
+                  <p class="sobre__cinto--texto">
+                    Some of the programming languages, tools and other
+                    technologies I've had contact with:
+                  </p>
+
+                  <ul class="sobre__cinto--techs">
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/html.svg"
+                        alt="HTML5"
+                        title="HTML5"
+                      />
+                      <span>HTML5</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/css.svg"
+                        alt="CSS3"
+                        title="CSS3"
+                      />
+                      <span>CSS3</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/js.svg"
+                        alt="JavaScript"
+                        title="JavaScript"
+                      />
+                      <span>JS</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/ts.svg"
+                        alt="TypeScript"
+                        title="TypeScript"
+                      />
+                      <span>TS</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/vue.svg"
+                        alt="Vue.js"
+                        title="Vue.js"
+                      />
+                      <span>Vue.js</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/react.svg"
+                        alt="React"
+                        title="React"
+                      />
+                      <span>React</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/next.svg"
+                        alt="Next.js"
+                        title="Next.js"
+                      />
+                      <span>Next</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/sass.svg"
+                        alt="Sass"
+                        title="Sass"
+                      />
+                      <span>Sass</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/py.svg"
+                        alt="Python"
+                        title="Python"
+                      />
+                      <span>Python</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/c.svg"
+                        alt="Linguagem C"
+                        title="Linguagem C"
+                      />
+                      <span>C</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/java.svg"
+                        alt="Java"
+                        title="Java"
+                      />
+                      <span>Java</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/mysql.svg"
+                        alt="MySQL"
+                        title="MySQL"
+                      />
+                      <span>MySQL</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/figma.svg"
+                        alt="Figma"
+                        title="Figma"
+                      />
+                      <span>Figma</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/psd.svg"
+                        alt="Photoshop"
+                        title="Photoshop"
+                      />
+                      <span>Ps</span>
+                    </li>
+                    <!-- <li class="sobre__cinto--tech">
+                                        <img src="assets/img/icons/techs/trello.svg" alt="Trello" title="Trello">
+                                        <span>Trello</span>
+                                    </li> -->
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/github.svg"
+                        alt="GitHub"
+                        title="GitHub"
+                      />
+                      <span>GitHub</span>
+                    </li>
+                    <li class="sobre__cinto--tech">
+                      <img
+                        src="assets/img/icons/techs/git.svg"
+                        alt="Git"
+                        title="Git"
+                      />
+                      <span>Git</span>
+                    </li>
+                  </ul>
+
+                  <p class="sobre__cinto--texto">
+                    My next steps include specializations in frameworks that are
+                    on the rise in the market,
+                    <strong class="texto-gradient"
+                      >React, Vue, Angular, Node.js, Express.js, MangoDB</strong
+                    >, for example, and other technologies focused on web and
+                    mobile development.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sobre__chamada" data-anima="bottom">
+              <img
+                src="assets/img/avatares/logotipo.svg"
+                alt=""
+                class="sobre__chamada--imagem"
+              />
+              <p class="sobre__chamada--texto">
+                In the last few months, I've been studying a lot and i've
+                developed some really cool work. How about meeting some of them?
+              </p>
+              <div class="caixa-botao">
+                <button class="botao botao-primario" data-botao="projetos">
+                  View Projects
+                </button>
+                <button class="botao botao-secundario" data-botao="contato">
+                  <span class="texto-gradient">Talk to Me</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="habilidades" id="habilidades">
+          <div class="habilidades__intro">
+            <div class="habilidades__texto" data-anima="left">
+              <h2 class="titulo-secao digitando-nocenter" data-anima="typing">
+                Skills
+              </h2>
+              <p class="habilidades__corpo">
+                I can add value to your business in several ways, here are some
+                of my main technical skills and activities that
+                <strong> i like to perform</strong>:
+              </p>
+            </div>
+            <img
+              src="assets/img/avatares/callme.png"
+              alt=""
+              class="habilidades__avatar"
+              data-anima="right"
+            />
+          </div>
+          <div class="habilidades__cards">
+            <div class="habilidades__card vidro" data-anima="bottom">
+              <h3 class="habilidades__card--titulo">
+                Website design and prototyping
+              </h3>
+              <p class="habilidades__card--descricao">
+                Construction of prototypes in Figma, with layouts that best suit
+                your needs and the visual identity of your brand.
+              </p>
+              <button
+                class="botao botao-secundario habilidades__card--botao"
+                data-botao="contato"
+              >
+                Get in Touch
+              </button>
+            </div>
+            <div
+              class="habilidades__card habilidades__card--principal vidro"
+              data-anima="bottom"
+            >
+              <h3 class="habilidades__card--titulo">
+                Web Development: Full Stack
+              </h3>
+              <p class="habilidades__card--descricao">
+                Coding your website, using HTML5, CSS3 and React, in addition to
+                seo and accessibility best practices, putting the final project
+                on the air.
+              </p>
+              <button
+                class="botao botao-secundario habilidades__card--botao"
+                data-botao="contato"
+              >
+                Get in Touch
+              </button>
+            </div>
+            <div class="habilidades__card vidro" data-anima="bottom">
+              <h3 class="habilidades__card--titulo">
+                Creation of visual identities and arts
+              </h3>
+              <p class="habilidades__card--descricao">
+                Design of logos, banners, flyers, business cards, arts for
+                customized products, image editions, among others.
+              </p>
+              <button
+                class="botao botao-secundario habilidades__card--botao"
+                data-botao="contato"
+              >
+                Get in Touch
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="projetos" id="projetos">
+          <div>
+            <h2 class="titulo-secao" data-anima="typing">Projects</h2>
+            <p class="projetos__texto" data-anima="bottom">
+              Below, I present some of the latest projects, individual, that I
+              participated as a
+              <strong class="texto-gradient"
+                >Designer and Full Stack Developer.</strong
+              >. You can find these and other works in
+              <a
+                href="https://github.com/OracleBrain"
+                target="_blank"
+                rel="noreferrer"
+                class="github-link"
+                >my GitHub repositories!</a
+              >!
+            </p>
+          </div>
+          <div class="projetos__projeto vidro" data-anima="bottom">
+            <div class="projetos__descricao">
+              <h3 class="subtitulo-secao" data-projeto="titulo">Aashis Jha</h3>
+              <a
+                href=""
+                target="_blank"
+                class="texto-gradient projetos__link"
+                data-projeto="link"
+                rel="noreferrer"
+                >https://github.com/OracleBrain</a
+              >
+              <p class="projetos__projeto--detalhes" data-projeto="detalhes">
+                A Blue Wand é um grupo 100% maranhense de apoio a homens
+                acometidos por câncer de pênis. Nosso objetivo é combater a
+                desinformação, incentivar a prevenção e o tratamento para esta
+                doença.
+              </p>
+              <h4 class="subtitulo-secao subtitulo-techs">Technologies:</h4>
+              <ul class="projetos__techs" data-projeto="techs">
+                <li class="projetos__techs--item" title="HTML5"></li>
+                <li class="projetos__techs--item" title="CSS3"></li>
+                <li class="projetos__techs--item" title="JavaScript"></li>
+                <li class="projetos__techs--item" title="Sass"></li>
+                <li class="projetos__techs--item" title="TypeScript"></li>
+                <li class="projetos__techs--item" title="Next"></li>
+                <li class="projetos__techs--item" title="React"></li>
+                <li class="projetos__techs--item" title="Figma"></li>
+                <li class="projetos__techs--item" title="Trello"></li>
+                <li class="projetos__techs--item" title="GitHub"></li>
+              </ul>
+              <div class="caixa-botao">
+                <button
+                  class="botao botao-primario"
+                  data-botao="visitar"
+                  onclick=""
+                >
+                  View Site
+                </button>
+                <button
+                  class="botao botao-secundario"
+                  data-botao="repositorio"
+                  onclick=""
+                >
+                  <span class="texto-gradient">Go to Repositories</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="projetos__carrossel">
+              <button
+                class="projetos__carrossel--botao projetos__carrossel--botao-left"
+                aria-label="Botão ir para o anterior"
+                title="Ir para o projeto anterior"
+                data-botao-anterior
+              >
+                <i class="ri-arrow-left-line"></i>
+              </button>
+
+              <div class="projetos__carrossel--imagem">
+                <ul class="projetos__carrossel--lista" data-carrossel>
+                  <li class="projetos__carrossel--imagem-item">
+                    <img
+                      alt=""
+                      src="assets/img/thumbs/11.png"
+                      class="projetos__carrossel--imagem-gif"
+                    />
+                  </li>
+
+                  <li class="projetos__carrossel--imagem-item">
+                    <img
+                      alt=""
+                      src="assets/img/thumbs/22.png"
+                      class="projetos__carrossel--imagem-gif"
+                    />
+                  </li>
+
+                  <li class="projetos__carrossel--imagem-item">
+                    <img
+                      alt=""
+                      src="assets/img/thumbs/33.png"
+                      class="projetos__carrossel--imagem-gif"
+                    />
+                  </li>
+
+                  <li class="projetos__carrossel--imagem-item">
+                    <img
+                      alt=""
+                      src="assets/img/thumbs/44.png"
+                      class="projetos__carrossel--imagem-gif"
+                    />
+                  </li>
+
+                  <li class="projetos__carrossel--imagem-item">
+                    <img
+                      alt=""
+                      src="assets/img/thumbs/55.png"
+                      class="projetos__carrossel--imagem-gif"
+                    />
+                  </li>
+
+                  <li class="projetos__carrossel--imagem-item">
+                    <img
+                      alt=""
+                      src="assets/img/thumbs/66.png"
+                      class="projetos__carrossel--imagem-gif"
+                    />
+                  </li>
+
+                  <li class="projetos__carrossel--imagem-item">
+                    <img
+                      alt=""
+                      src="assets/img/thumbs/77.png"
+                      class="projetos__carrossel--imagem-gif"
+                    />
+                  </li>
+
+                  <li class="projetos__carrossel--imagem-item">
+                    <img
+                      alt=""
+                      src="assets/img/thumbs/88.png"
+                      class="projetos__carrossel--imagem-gif"
+                    />
+                  </li>
+
+                  <li class="projetos__carrossel--imagem-item">
+                    <img
+                      alt=""
+                      src="assets/img/thumbs/99.png"
+                      class="projetos__carrossel--imagem-gif"
+                    />
+                  </li>
+
+                  <li class="projetos__carrossel--imagem-item">
+                    <img
+                      alt=""
+                      src="assets/img/thumbs/100.png"
+                      class="projetos__carrossel--imagem-gif"
+                    />
+                  </li>
+
+                  <!-- <li class="projetos__carrossel--imagem-item"><img alt="PetPlanet página do usuário" src="assets/img/thumbs/petplanetuser.jpg" class="projetos__carrossel--imagem-gif"></li> -->
+                </ul>
+              </div>
+
+              <button
+                class="projetos__carrossel--botao projetos__carrossel--botao-right"
+                aria-label="Botão ir para o próximo"
+                title="Ir para o próximo projeto"
+                data-botao-proximo
+              >
+                <i class="ri-arrow-right-line"></i>
+              </button>
+
+              <div class="projetos__carrossel--indicadores" data-navegacao>
+                <button
+                  class="projetos__carrossel--indicador carousel__indicador--ativo"
+                  aria-label="Botão indicador"
+                  data-indicador="0"
+                ></button>
+                <button
+                  class="projetos__carrossel--indicador"
+                  aria-label="Botão indicador"
+                  data-indicador="1"
+                ></button>
+                <button
+                  class="projetos__carrossel--indicador"
+                  aria-label="Botão indicador"
+                  data-indicador="2"
+                ></button>
+                <button
+                  class="projetos__carrossel--indicador"
+                  aria-label="Botão indicador"
+                  data-indicador="3"
+                ></button>
+                <button
+                  class="projetos__carrossel--indicador"
+                  aria-label="Botão indicador"
+                  data-indicador="4"
+                ></button>
+                <button
+                  class="projetos__carrossel--indicador"
+                  aria-label="Botão indicador"
+                  data-indicador="5"
+                ></button>
+                <button
+                  class="projetos__carrossel--indicador"
+                  aria-label="Botão indicador"
+                  data-indicador="6"
+                ></button>
+                <button
+                  class="projetos__carrossel--indicador"
+                  aria-label="Botão indicador"
+                  data-indicador="7"
+                ></button>
+                <button
+                  class="projetos__carrossel--indicador"
+                  aria-label="Botão indicador"
+                  data-indicador="8"
+                ></button>
+                <button
+                  class="projetos__carrossel--indicador"
+                  aria-label="Botão indicador"
+                  data-indicador="9"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="citacao">
+          <img
+            src="assets/img/PrakashDevlogo-white.svg"
+            alt=""
+            class="citacao__logo"
+            data-anima="left"
+          />
+          <q class="citacao__frase" data-anima="right"
+            >You Must Know Who You Are. <br /><strong>- Aashis Jha</strong></q
+          >
+        </aside>
+
+        <section class="contato" id="contato">
+          <div class="contato__container vidro">
+            <form
+              action="https://formsubmit.co/bewithu.aj@gmail.com"
+              method="POST"
+              class="contato__formulario"
+              data-anima="left"
+            >
+              <h2 class="titulo-secao">Contact</h2>
+
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Aashis | Hello, I was very happy to receive your message! Thank you for recognizing my work, I will be contacting you soon, Thanks. ;)"
+              />
+
+              <div class="input-wrp">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="contato__formulario--campo"
+                  data-campo="nome"
+                  required
+                />
+                <label
+                  for="name"
+                  class="contato__formulario--label"
+                  data-label="nome"
+                  >Name</label
+                >
+              </div>
+              <div class="input-wrp">
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="contato__formulario--campo"
+                  data-campo="email"
+                  required
+                />
+                <label
+                  for="email"
+                  class="contato__formulario--label"
+                  data-label="email"
+                  >E-mail</label
+                >
+              </div>
+              <div class="input-wrp">
+                <input
+                  type="text"
+                  name="_subject"
+                  id="assunto"
+                  class="contato__formulario--campo"
+                  data-campo="assunto"
+                  required
+                />
+                <label
+                  for="assunto"
+                  class="contato__formulario--label"
+                  data-label="assunto"
+                  >Subject</label
+                >
+              </div>
+              <div class="input-wrp textarea">
+                <textarea
+                  id="message"
+                  name="message"
+                  class="contato__formulario--campo"
+                  data-campo="mensagem"
+                  required
+                  maxlength="280"
+                ></textarea>
+                <label
+                  for="message"
+                  class="contato__formulario--label"
+                  data-label="mensagem"
+                  >Message</label
+                >
+              </div>
+
+              <button type="submit" class="botao botao-primario">Submit</button>
+            </form>
+
+            <div class="contato__texto" data-anima="right">
+              <h3 class="subtitulo-secao">Let's chat?</h3>
+              <p class="contato__corpo">
+                I am always open to dialogue, exchange of ideas and new
+                connections! Can I help you in any way? Feel free to contact me
+                through the form or through my social networks:
+              </p>
+              <ul class="contato__redes">
+                <li class="contato__rede">
+                  <a
+                    href="https://www.linkedin.com/in/aashiszha"
+                    title="Linkedin"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><i class="ri-linkedin-box-fill"></i
+                  ></a>
+                        </li>
+                        <li class="contato__rede">
+                            <a href="https://www.instagram.com/aashiszha/" title="Instagram" target="_blank" rel="noreferrer"><i class="ri-instagram-line"></i
+                  ></a>
+                        </li>
+                        <li class="contato__rede">
+                            <a href="https://github.com/OracleBrain" title="GitHub" target="_blank" rel="noreferrer"><i class="ri-github-fill"></i
+                  ></a>
+                        </li>
+                        <li class="contato__rede">
+                            <a href="mailto:bewithu.aj@gmail.com" title="E-mail" target="_blank" rel="noreferrer"><i class="ri-mail-line"></i
+                  ></a>
+                        </li>
+                        <li class="contato__rede">
+                            <a href="https://youtube.com/@OracleBrain" title="Youtube" target="_blank" rel="noreferrer"><i class="ri-youtube-line"></i
+                  ></a>
+                        </li>
+                    </ul>
+                    <img class="contato__avatar" src="assets/img/avatares/bebida.png" alt="" />
+            </div>
+    </div>
+    </section>
+    </main>
+    <footer class="rodape">
+        &copy; 2022 Aashis Jha. All rights reserved. Powered by: BisKIRAN TECHNOLOGY
+    </footer>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

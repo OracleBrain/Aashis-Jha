@@ -1,0 +1,145 @@
+/* Botões */
+
+.botao {
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 6px;
+    height: 36px;
+    font-size: 14px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover {
+    filter: brightness(1.4);
+}
+
+.botao-primario {
+    background: var(--gradient);
+}
+
+.botao-secundario {
+    line-height: 12px;
+    box-sizing: border-box;
+    font-weight: 600;
+    border: 2px solid transparent;
+    background: url(../img/apetrechos/botao.png) no-repeat center / cover;
+}
+
+.caixa-botao>.botao {
+    width: 180px;
+}
+
+.caixa-botao>.botao-secundario {
+    margin-left: 24px;
+}
+
+.texto-gradient {
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.botao-secundario>.texto-gradient:not(.texto-contato) {
+    position: relative;
+    bottom: -1px;
+}
+
+.github-link {
+    color: #FFF;
+    transition: .4s;
+}
+
+.github-link:hover {
+    color: #40FFC1;
+}
+
+/* Títulos */
+
+.titulo-secao {
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 72px;
+    line-height: 160%;
+    font-family: 'Space Mono', monospace;
+}
+
+.subtitulo-secao {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: .5px;
+}
+
+.titulo-secao::before,
+.subtitulo-secao::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    background: url(../../assets/img/icons/sobremim.svg) no-repeat center / contain;
+    width: 48px;
+    height: 42px;
+    margin-right: 16px;
+}
+
+.subtitulo-secao::before {
+    background: url(../../assets/img/icons/ficha.svg) no-repeat center / contain;
+    width: 40px;
+    height: 40px;
+    bottom: -4px;
+}
+
+/* slightly transparent fallback */
+
+.vidro {
+    background-color: rgba(12, 35, 46, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+}
+
+/* if backdrop support: very transparent and blurred */
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .vidro {
+        background: linear-gradient(106.51deg, rgba(255, 255, 255, 0.03) 3.44%, rgba(255, 255, 255, 0.012) 64.82%);
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .caixa-botao>.botao {
+        box-sizing: border-box;
+        width: 140px;
+        height: 33px;
+        font-size: 12px;
+        line-height: 1;
+    }
+    .caixa-botao {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 290px;
+    }
+    .caixa-botao>.botao-secundario {
+        background-image: url(../../assets/img/apetrechos/botao767.png);
+        margin-left: 8px;
+    }
+    .titulo-secao {
+        font-size: 30px;
+    }
+    .subtitulo-secao {
+        font-size: 20px;
+    }
+    .titulo-secao::before,
+    .subtitulo-secao::before {
+        width: 40px;
+        height: 34px;
+        margin-right: 14px;
+    }
+}

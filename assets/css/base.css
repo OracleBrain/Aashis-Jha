@@ -1,0 +1,81 @@
+/* Tipografia */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono&display=swap');
+/* Reset CSS */
+
+@import url(../css/reset.css);
+@import url(../css/normalize.css);
+@import url(../css/componentes.css);
+/* Variáveis */
+
+:root {
+    /* Cores */
+    --gradient: linear-gradient(45deg, #4070F4 0%, #2BD67B 100%);
+    --branco: #FFFFFF;
+    --preto: #040413;
+    /* Tipografia */
+    --epilogue: 'Epilogue', sans-serif;
+    /* Ícones */
+    --sobre-mim: "\efb1";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--preto);
+    font-family: var(--epilogue);
+    color: var(--branco);
+    scroll-behavior: smooth;
+}
+
+.container-principal {
+    background-image: url(../../assets/img/apetrechos/luz.png), url(../../assets/img/apetrechos/luz2.png), url(../../assets/img/apetrechos/luz3.png);
+    background-repeat: no-repeat;
+    background-position: -240px top, right 200px, left 1400px;
+}
+
+.conteudo {
+    overflow-x: hidden;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient);
+    border-radius: 12px;
+    transition: .6s ease all;
+}
+
+::-moz-selection {
+    background-color: #2BD67B;
+}
+
+::selection {
+    background-color: #2BD67B;
+}
+
+@media screen and (max-width: 1023px) {
+    .container-principal {
+        background-position: -240px top, right 800px, left 2800px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-principal {
+        background-position: -240px top, right 280px, left 1800px;
+    }
+}

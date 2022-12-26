@@ -1,0 +1,370 @@
+.sobre {
+    background-image: url(../../assets/img/apetrechos/circulo.svg), url(../../assets/img/apetrechos/circulo.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: calc(50% - 640px) 500px, calc(50% + 640px) 2200px;
+    position: relative;
+}
+
+.sobre__container {
+    border-radius: 24px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 88px 24px 0 24px;
+    margin-bottom: 80px;
+}
+
+.sobre__container>.titulo-secao {
+    margin-bottom: 24px;
+}
+
+.sobre::before {
+    content: url(../../assets/img/apetrechos/tracejado1.svg);
+    position: absolute;
+    z-index: -1;
+    left: calc(50% - 340px);
+    top: -90px;
+}
+
+.sobre__container>div:not(.sobre__chamada) {
+    padding: 72px 0;
+}
+
+.sobre__apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sobre__apresentacao::before {
+    content: '';
+    height: 150px;
+    width: 107px;
+    background: url(../../assets/img/apetrechos/tracos1.svg);
+    margin-right: 88px;
+}
+
+.sobre__apresentacao::after {
+    content: '';
+    height: 150px;
+    width: 107px;
+    background: url(../../assets/img/apetrechos/tracos2.svg);
+    margin-left: 88px;
+}
+
+.sobre__hello {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre__hello--code {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+}
+
+.sobre__hello--logo {
+    display: block;
+    margin-top: 32px;
+}
+
+.sobre__apresentacao--avatar {
+    margin-left: 56px;
+    animation: inflar 2s ease infinite;
+}
+
+@keyframes inflar {
+    from,
+    to {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.sobre__ficha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre__ficha--avatar {
+    display: block;
+    margin-right: 80px;
+}
+
+.sobre__card {
+    padding: 24px;
+    background: var(--gradient);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    border-radius: 24px;
+    width: 570px;
+    position: relative;
+}
+
+.sobre__card::after {
+    content: url(../../assets/img/apetrechos/pontilhado2.svg);
+    position: absolute;
+    top: -72px;
+    right: -76px;
+}
+
+.sobre__card--item:not(.sobre__card--item:last-of-type) {
+    margin-bottom: 16px;
+}
+
+.sobre__card--item::before {
+    content: url(../../assets/img/icons/ficha-tech/nome.svg);
+    margin-right: 12px;
+    width: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.sobre__card--item:nth-of-type(1)::before {
+    right: -4px;
+}
+
+.sobre__card--item:nth-of-type(2)::before {
+    content: url(../../assets/img/icons/ficha-tech/idade.svg);
+}
+
+.sobre__card--item:nth-of-type(3)::before {
+    content: url(../../assets/img/icons/ficha-tech/naturalidade.svg);
+}
+
+.sobre__card--item:nth-of-type(4)::before {
+    content: url(../../assets/img/icons/ficha-tech/formacao.svg);
+}
+
+.sobre__card--item:nth-of-type(5)::before {
+    content: url(../../assets/img/icons/ficha-tech/area.svg);
+}
+
+.sobre__card--item:not(.sobre__card--item:first-of-type)::before {
+    bottom: -4px;
+}
+
+.sobre__card--item>strong {
+    font-weight: 600;
+}
+
+.sobre__quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre__quote--texto {
+    max-width: 672px;
+    line-height: 160%;
+    font-size: 18px;
+    position: relative;
+}
+
+.sobre__quote--texto::before {
+    content: url(../../assets/img/icons/aspas.svg);
+    display: block;
+    margin-bottom: 16px;
+    height: 40px;
+    position: relative;
+    left: -5px;
+}
+
+.sobre__quote--texto::after {
+    content: url(../../assets/img/apetrechos/pontilhado3.svg);
+    position: absolute;
+    left: -88px;
+    top: 94px
+}
+
+.sobre__quote--avatar {
+    margin-left: 40px;
+}
+
+.sobre__cinto--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre__cinto--conteudo>.subtitulo-secao::before {
+    background-image: url(../../assets/img/icons/ferramentas.svg);
+    width: 32px;
+    height: 32px;
+    top: 1px;
+}
+
+.sobre__cinto--imagem {
+    display: block;
+    margin-right: 80px;
+}
+
+.sobre__cinto--texto {
+    line-height: 160%;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.sobre__cinto--techs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 640px;
+    margin: 40px 0;
+    position: relative;
+    left: -12px;
+}
+
+.sobre__cinto--tech {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    cursor: pointer;
+    transition: .8s ease all;
+}
+
+.sobre__cinto--tech:hover {
+    transform: scale(1.2);
+}
+
+.sobre__cinto--tech>img {
+    transition: .5s ease all;
+}
+
+.sobre__cinto--tech>span {
+    transition: .8s ease all;
+    position: absolute;
+    opacity: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+}
+
+.sobre__cinto--tech:hover>img {
+    opacity: 0;
+}
+
+.sobre__cinto--tech:hover>span {
+    opacity: 1;
+}
+
+.sobre__chamada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 560px;
+    margin: auto;
+    padding: 72px 0;
+}
+
+.sobre__chamada--texto {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    line-height: 160%;
+}
+
+.sobre__chamada--texto::before {
+    content: url(../../assets/img/icons/foguete.svg);
+    display: block;
+    height: 40px;
+    margin-bottom: 16px;
+    position: relative;
+    left: -5px;
+}
+
+@media screen and (max-width: 1023px) {
+    .sobre {
+        background-position: calc(50% - 380px) 420px, calc(50% + 380px) 3080px;
+    }
+    .sobre::before {
+        display: none;
+    }
+    .sobre__apresentacao,
+    .sobre__ficha,
+    .sobre__quote,
+    .sobre__cinto--container {
+        flex-direction: column;
+    }
+    .sobre__apresentacao--avatar,
+    .sobre__ficha--avatar,
+    .sobre__quote--avatar,
+    .sobre__cinto--imagem {
+        margin: 0;
+        margin-top: 56px;
+    }
+    .sobre__apresentacao::before,
+    .sobre__apresentacao::after {
+        display: none;
+    }
+    .sobre__ficha--avatar,
+    .sobre__cinto--imagem {
+        order: 2;
+    }
+    .sobre__quote--texto {
+        max-width: 660px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sobre__container {
+        padding: 56px 24px 0 24px;
+    }
+    .sobre__container>div:not(.sobre__chamada) {
+        padding: 56px 0;
+    }
+    .sobre__apresentacao--avatar,
+    .sobre__ficha--avatar,
+    .sobre__quote--avatar,
+    .sobre__cinto--imagem {
+        width: 180px;
+        margin-top: 40px;
+    }
+    .sobre__card,
+    .sobre__quote--texto,
+    .sobre__cinto--texto,
+    .sobre__chamada--texto {
+        font-size: 14px;
+    }
+    .sobre__card {
+        width: 100%;
+        line-height: 160%;
+    }
+    .sobre__hello--code {
+        font-size: 18px;
+    }
+    .sobre__chamada--imagem {
+        display: none;
+    }
+    .sobre__chamada {
+        padding-top: 0;
+        padding-bottom: 56px;
+    }
+    .sobre__cinto--techs {
+        justify-content: flex-start;
+    }
+    .sobre__cinto--tech {
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+    }
+    .sobre__cinto--tech>img {
+        width: 28px;
+        height: 28px;
+    }
+    .sobre__quote--texto::after {
+        display: none;
+    }
+    .sobre__cinto--tech>span {
+        font-size: 12px;
+    }
+}
